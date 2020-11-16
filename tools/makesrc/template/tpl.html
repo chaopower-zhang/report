@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="semantic.min.css">
+</head>
+
+<body>
+    <div class='ui basic segment'>
+        <img src='logo.svg' height='25' style="margin-bottom: 20px;" />
+
+        <div class='ui two column grid'>
+            <!-- 姓名隐去全名，保留最后一个字 -->
+            <div class="row"></div>
+                <div class="column" style="text-align: right;padding: 0;">
+                    <button class="ui primary button">姓名</button>
+                </div>
+                <div class="column" style="text-align: left;padding: 0;">
+                    <button class="ui button">%{name}</button>
+                </div>
+            </div>
+        </div>
+        <div class='ui two column grid'>
+            <div class="row">
+                <div class="column" style="text-align: right;padding: 0;">
+                    <button class="ui primary button">样本ID</button>
+                </div>
+                <div class="column" style="text-align: left;padding: 0;">
+                    <button class="ui button">%{sampleID}</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui horizontal divider">
+            检测结果
+        </div>
+
+
+        %{target}
+
+        %{hered}
+
+        %{fusion}
+
+        %{cna}
+
+        %{immune}
+
+        %{chemo}
+
+    </div>
+
+    <div >
+        <h6 class="ui horizontal divider header">
+            关注鼎晶生物公众号获取更多资讯
+        </h6>
+        <div style="text-align: center;">
+            <button class="ui primary button" 
+                onclick="window.location.href='http://question.topgen.com.cn/question?id=%{sampleID}'" 
+            >
+                点击参加满意度问卷调查
+            </button>
+        </div>
+        <div style="margin-top: 20px">
+            <img class="ui small rounded image" src="barcode.jpeg" alt="barcode" style="margin: 0 auto" />
+        </div>
+    </div>
+
+</body>
+
+</html>

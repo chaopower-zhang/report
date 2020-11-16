@@ -1,0 +1,4 @@
+example/*xlsx
+para.json
+result/*/*
+__pycache__
